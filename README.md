@@ -1,13 +1,16 @@
 # Xbox-360-game-shortcuts  
-Simple bash script to make symbolic links to your 360 games for the purpose of emulation. This is created for those who wish maintain their directory structure, and do not want to rename files. If you do not have original hardware and have no desire to maintain the original file structure then you can use other scripts to rename your files.  
-  
+Simple Windows and Linux scripts to make symbolic links to your 360 games for the purpose of emulation. This is created for those who wish maintain their directory structure, and do not want to rename files. If you do not have original hardware and have no desire to maintain the original file structure then you can use other scripts to rename your files.  
+
+The .sh file is a Bash script for Linux systems.  
+The .ps1 file is a PowerShell script for Windows systems.  
+They each should produce similar results, though I have only run the PowerShell script in a test environment whereas the Bash script was run on my gaming system.  
   
   
   
   
 ## How to:  
   
-Step 1: download the bash script to your 360 roms folder (eg \Emulation\Roms\xbox360\roms\)  
+Step 1: download the appropriate script to your 360 roms folder (eg \Emulation\Roms\xbox360\roms\)  
 
 Step 2: place a symlink for your Content folder in the rom folder OR edit the script to point to you Content folder   
 
