@@ -9,7 +9,7 @@ Simple bash script to make symbolic links to your 360 games for the purpose of e
   
 Step 1: download the bash script to your 360 roms folder (eg \Emulation\Roms\xbox360\roms\)  
 
-Step 2: place a symlink for your Content folder in the rom foler OR edit the script to point to you Content folder   
+Step 2: place a symlink for your Content folder in the rom folder OR edit the script to point to you Content folder   
 
 Step 3: execute the script to output symlinks for all your XBox 360 games (you can now delete the content symlink)  
 
