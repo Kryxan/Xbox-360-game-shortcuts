@@ -6,8 +6,8 @@ The **.ps1** file is a *PowerShell* script for *Windows* systems.
 They each should produce similar results, though I have only run the PowerShell script in a test environment whereas the Bash script was run on my gaming system.  
   
 > [!IMPORTANT]
-> Assumes XBox 360 games are stored in the /content/ folder, as they would be if transferred from your XBox, and are stored in GOD format. While it does not specifically require the content folder, it does require **/$Title_ID/00007000/** or **/$Title_ID/000D0000/** folder structure. The script will determine the name of the game from the **$Title_ID** and use that **Game_Name** in nameing the output symlink.
-> Expected output of script: **$Game_Name [$Title_ID]** with subfolders **xbla** for **XBox Live Arcade** and **xblig** for **XBox Live Indie Games**
+> Assumes XBox 360 games are stored in the /content/ folder, as they would be if transferred from your XBox, and are stored in GOD format. While it does not specifically require the content folder, it does require **/$Title_ID/00007000/** or **/$Title_ID/000D0000/** folder structure. The script will determine the name of the game from the **$Title_ID** and use that **Game_Name** in nameing the output symlink.   
+> Expected output of script: **$Game_Name [$Title_ID]** with subfolder **xbla** for **XBox Live Arcade**  
 > for example: **Call of Duty Black Ops [41560855]**  
   
  ### How the XBox 360 stores games:   
