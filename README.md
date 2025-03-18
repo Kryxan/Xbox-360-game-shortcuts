@@ -1,12 +1,28 @@
 # Xbox-360-game-shortcuts  
 Simple Windows and Linux scripts to make symbolic links to your 360 games for the purpose of emulation. This is created for those who wish maintain their directory structure, and do not want to rename files. If you do not have original hardware and have no desire to maintain the original file structure then you can use other scripts to rename your files.  
 
-The .sh file is a Bash script for Linux systems.  
-The .ps1 file is a PowerShell script for Windows systems.  
+The **.sh** file is a *Bash script* for *Linux* systems.  
+The **.ps1** file is a *PowerShell* script for *Windows* systems.  
 They each should produce similar results, though I have only run the PowerShell script in a test environment whereas the Bash script was run on my gaming system.  
   
+> [!IMPORTANT]
+> Assumes XBox 360 games are stored in the /content/ folder, as they would be if transferred from your XBox, and are stored in GOD format. While it does not specifically require the content folder, it does require **/$Title_ID/00007000/** or **/$Title_ID/000D0000/** folder structure. The script will determine the name of the game from the **$Title_ID** and use that **Game_Name** in nameing the output symlink.
+> Expected output of script: **$Game_Name [$Title_ID]** with subfolders **xbla** for **XBox Live Arcade** and **xblig** for **XBox Live Indie Games**
+> for example: **Call of Duty Black Ops [41560855]**  
   
-  
+ ### How the XBox 360 stores games:   
+````
+Content   
+ 0000000000000000   
+  454107DC      -- Xbox360 game Title ID   
+    00000002    -- Xbox360 game DLC   
+    00007000    -- XBox360 game in GOD format   
+  4541080F   
+  584113BF      -- Xbox360 game Title ID   
+    000D0000    -- XBox360 Live Arcade game   
+  ...other titles   
+````  
+ 
   
 ## How to:  
   
@@ -18,25 +34,11 @@ Step 3: execute the script to output symlinks for all your XBox 360 games (you c
 
 Step 4: launch EmulationStation or Steam Rom Manager and parse your games  
 
-Step 5: play the game (assuming game is compatible with the current release)  
+Step 5: play the games (assuming games are compatible with the current Xenia release)  
   
   
-> [!IMPORTANT]
-> Assumes XBox 360 games are stored in the /content/ folder, as they would be if transferred from your XBox, and are stored in GOD format.
   
   
-### How the XBox 360 stores games:   
-````
-Content   
- 0000000000000000   
-  454107DC      -- Xbox360 game Title ID   
-    00000002    -- Xbox360 game DLC   
-    00070000    -- XBox360 game in GOD format   
-  4541080F   
-  584113BF      -- Xbox360 game Title ID   
-    000D0000    -- XBox360 Live Arcade game   
-  ...other titles   
-````  
    
   
   
