@@ -5,7 +5,7 @@ date
 
 
 # Provide full path to roms here.
-content_path="/media/deck/games/xbox/Content/"
+content_path="/Content/"
 
 #CSV from: https://github.com/IronRingX/xbox360-gamelist
 file="xbox360_gamelist.csv"
